@@ -1,11 +1,12 @@
 from random import randint
 vowels = ['a', 'e', 'i', 'o', 'u', 'y']
-letters = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z']
+letters = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'r', 's', 't', 'v', 'w', 'x', 'z']
+
+
 
 def main():
-    fullName = GenerateName() + " "
-    #fullName += GenerateLastName()
-    print(fullName)
+    fullName = GenerateName() + " " + GenerateName()
+    print(fullName.title())
 
 def GenerateName():
     name = ''
